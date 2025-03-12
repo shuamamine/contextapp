@@ -3,6 +3,8 @@ import { ThemeContext } from '../contexts/ThemeContext';
 class BookList extends Component {
  static contextType = ThemeContext;
  render(){
+  const { isLightTheme, light, dark } = this.context;  
+  const theme = isLightTheme ? light : dark;
     return (
         <div className="booklist" style={{ color: theme.syntax, background: theme.bg }}>
           <ul>
@@ -15,5 +17,4 @@ class BookList extends Component {
  } 
     
 };
-
 export default BookList;
