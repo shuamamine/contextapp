@@ -9,7 +9,7 @@ class ThemeToggle extends Component
         const {toggleTheme} =  this.context;
         return(
             <>
-                <button onClick={toggleTheme}>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"  onClick={toggleTheme}>
                     Toggle Theme
                 </button>
             </>
